@@ -1,0 +1,339 @@
+
+
+/* General Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 7, 7);
+    opacity: 1.4;
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* navbar sec1 styling */
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.sec1 li {
+    list-style: none;
+}
+
+.sec1 li a {
+    text-decoration: none;
+    color: rgb(113, 204, 240);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* navbar sec2 styling */
+.sec2 a {
+    display: flex;
+}
+
+.sec2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.sec2 li {
+    list-style: none;
+}
+
+.sec2 li a {
+    color: rgb(113, 204, 240);
+    font-weight: bold;
+    margin-left: 100px;
+    padding-top: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(113, 204, 240);
+    font-family: arial;
+}
+
+.sec2 a:hover {
+    text-decoration: underline;
+}
+
+/* Section part */
+section {
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.part1 {
+    width: 50%;
+}
+
+.name {
+    height: 40px;
+}
+
+.name p {
+    font-size: 2.0rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-left: 130px;
+    padding-top: 150px;
+}
+
+.developer {
+    height: 30px;
+}
+
+.developer p {
+    font-size: 1.4rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 130px;
+    padding-top: 150px;
+    margin-top: 10px;
+}
+
+.info {
+    height: 100px;
+}
+
+.info p {
+    font-size: 0.9rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 130px;
+    padding-top: 150px;
+    margin-top: 15px;
+}
+
+/* Part2 */
+.part2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 img {
+    height: 300px;
+    width: 300px;
+    border: 8px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-right: 70px;
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.6);
+}
+
+/* Footer */
+footer {
+    display: flex;
+}
+
+.btn {
+    background-color: rgb(113, 204, 240);
+    margin-left: 130px;
+    margin-top: 5px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.btn p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.github {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-github {
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+.linkedin {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-linkedin-in {
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+.twitter {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-twitter {
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+/* Separate Instagram */
+.instagram {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-instagram {
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+/* Separate YouTube */
+.youtube {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-youtube {
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablet Screens (max-width 768px) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .sec1,
+    .sec2 ul {
+        width: 100%; 
+        justify-content: center;
+    }
+
+    .sec2 li a {
+        margin-left: 0; 
+        padding-top: 10px;
+    }
+
+    /* Section layout */
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .part1, .part2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .part2 img {
+        width: 200px; 
+        height: 200px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+   
+    .btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .github, .linkedin, .twitter, .youtube, .instagram {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* For Mobile Screens (max-width 480px) */
+@media (max-width: 480px) {
+    /* Navbar */
+    .sec1 {
+        font-size: 1.2rem; 
+    }
+
+    /* Section part */
+    .name p,
+    .developer p,
+    .info p {
+        font-size: 1rem; /* Adjust font size */
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    .part2 img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .btn {
+        width: 100px; 
+    }
+
+    /* Footer Icons */
+    .fa-github,
+    .fa-linkedin-in,
+    .fa-twitter,
+    .fa-youtube,
+    .fa-instagram {
+        font-size: 18px; 
+    }
+}
