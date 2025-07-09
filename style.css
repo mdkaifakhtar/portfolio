@@ -1,0 +1,701 @@
+body {
+    background: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(7, 7, 7);
+    opacity: 1.4;
+}
+
+.navbar {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* navbar sec1 styling */
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 1.8rem;
+}
+
+.sec1 li {
+    list-style: none;
+}
+
+.sec1 li a {
+    text-decoration: none;
+    color: rgb(113, 204, 240);
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sec1 :hover {
+    transform: scale(1.03);
+}
+
+/* navbar sec2 styling */
+.sec2 a {
+    display: flex;
+}
+
+.sec2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.sec2 li {
+    list-style: none;
+}
+
+.sec2 li a {
+    color: rgb(113, 204, 240);
+    font-weight: bold;
+    margin-left: 100px;
+    padding-top: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(113, 204, 240);
+    font-family: arial;
+    
+}
+
+.sec2 a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Section part */
+section {
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow elements to wrap on smaller screens */
+}
+
+#part1 {
+    width: 50%;
+}
+
+.name {
+    height: 40px;
+}
+
+.name p {
+    font-size: 2.2rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-left: 130px;
+    padding-top: 150px;
+}
+
+
+
+.developer {
+    height: 30px;
+}
+
+.developer p {
+    font-size: 1.6rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 130px;
+    padding-top: 150px;
+    margin-top: 10px;
+}
+
+.info {
+    height: 100px;
+}
+
+.info p {
+    font-size: 1.0rem;
+    color: rgb(113, 204, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 130px;
+    padding-top: 150px;
+    margin-top: 15px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+/* Part2 */
+.part2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part2 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 8px solid rgb(113, 204, 240) ;
+    margin-right: 70px;
+    margin-top: 120px;
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+   
+    
+
+
+.part2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    display: flex;
+}
+
+.btn {
+    background-color: rgb(113, 204, 240);
+    margin-left: 130px;
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.twitter , .instagram ,
+.github , .linkedin ,
+.youtube {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-github,.fa-linkedin-in,
+.fa-instagram , .fa-youtube ,
+.fa-twitter{
+    color: rgb(113, 204, 240);
+    font-size: 20px;
+}
+
+ 
+.btn:hover,
+.github:hover,
+.linkedin:hover,
+.instagram:hover,
+.youtube:hover,
+.twitter:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.4);
+}
+
+#about {
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    color: rgb(113, 204, 240);
+    background-color: #0a0909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 150px;
+    transition: transform 0.3s ease;
+}
+
+#about:hover {
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.6);
+    transform: scale(1.03);
+}
+
+
+#about .img img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.4);
+}
+
+#about .img img:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    width: 60%;
+    gap: 40px;
+    color: rgb(113, 204, 240);
+    margin-left: 70px;
+}
+
+.content h1 {
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#contact {
+    width: 80%;
+    height: 90vh;
+    border-radius: 20px;
+    color: rgb(113, 204, 240);
+    background-color: #0a0909;
+    margin-top: 200px;
+    margin-left: 150px;
+    transition: transform 0.3s ease;
+}
+
+#contact:hover {
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.6);
+    transform: scale(1.03);
+}
+
+.my-email {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.my-email h1 {
+    font-weight: bolder;
+    line-height: 2.0;
+    font-size: 40px;
+}
+
+
+.user-info .input {
+    border: none;
+    border-bottom: 2px solid rgb(113, 204, 240);
+    background-color: #0a0909;
+    color: rgb(113, 204, 240);
+    margin-left: 50px;
+    margin-bottom: 80px;
+    outline: none;
+    width: 300px;
+    height: 30px;
+}
+
+.user-info label {
+    margin-left: 50px;
+    padding-top: 80px;
+}
+
+.feedback {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.msg-input {
+    width: 50%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 20px;
+    border: 2px solid rgb(113, 204, 240);
+    border-radius: 20px;
+    background-color: transparent;
+    color: rgb(113, 204, 240);
+    font-size: 16px;
+    resize: vertical;
+}
+
+.submit {
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(113, 204, 240);
+    border-radius: 40px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.submit:hover {
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.3);
+    transform: scale(1.02);
+}
+
+#my-projects {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(113, 204, 240);
+    margin-top: 150px;
+}
+
+#my-projects:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0px 30px rgba(113, 204, 240, 0.3);
+}
+
+
+#project-part1,
+#project-part2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 90vh;
+    margin-left: 140px;
+    gap: 50px;
+    margin-bottom: 70px;
+
+}
+
+#project-part1 h1,
+#project-part2 h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.my-project1,
+.my-project2,
+.my-project3,
+.my-project4 {
+    width: 90%;
+    height: 95vh;
+    border: 5px solid #0a0909;
+    border-radius: 20px;
+    color: rgb(113, 204, 240);
+    background-color: #0a0909;
+    margin-top: 80px;
+    transition: transform 0.3s ease;
+}
+
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 1px solid #0a0909;
+}
+
+.description p {
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.my-project1:hover,
+.my-project2:hover,
+.my-project3:hover,
+.my-project4:hover {
+    box-shadow: 0 0px 30px rgba(113, 204, 240, 0.6);
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .sec2 li a {
+        margin-left: 50px;
+    }
+    .part2 img {
+        height: 250px;
+        width: 250px;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    #about,
+    #contact,
+    #project-part1,
+    #project-part2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .sec1,
+    .sec2 ul {
+        width: 100%;
+        justify-content: center;
+    }
+    .sec2 li a {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+    #part1,
+    .part2 {
+        width: 100%;
+        text-align: center;
+    }
+    .name p,
+    .developer p,
+    .info p {
+        margin-left: 0;
+        padding-top: 40px;
+    }
+    .part2 img {
+        margin: 40px 0;
+    }
+    .btn {
+        margin: 10px auto;
+        display: block;
+    }
+    .twitter,
+    .instagram,
+    .github,
+    .linkedin,
+    .youtube {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about,
+    #contact,
+    #project-part1,
+    #project-part2 {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about .img img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .user-info .input,
+    .msg-input {
+        width: 90%;
+    }
+    .submit {
+        margin-left: 0;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .sec1 li a,
+    .sec2 li a {
+        font-size: 0.9rem;
+    }
+    .name p,
+    .developer p,
+    .info p {
+        font-size: 1.2rem;
+    }
+    .content h1 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    #my-projects {
+        font-size: 28px;
+    }
+    .my-project1,
+    .my-project2,
+    .my-project3,
+    .my-project4 {
+        height: auto;
+    }
+    .description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 10px;
+    }
+    .sec2 li a {
+        margin-left: 10px;
+    }
+    .part2 img {
+        height: 180px;
+        width: 180px;
+    }
+    .name p,
+    .developer p,
+    .info p {
+        font-size: 1rem;
+    }
+    .user-info .input,
+    .msg-input {
+        font-size: 14px;
+    }
+    .submit {
+        width: 80px;
+        font-size: 14px;
+    }
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: rgb(113, 204, 240);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        position: relative;
+        padding-top: 60px; 
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+   
+    .sec1 {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .sec2 {
+        width: 100%;
+        text-align: center;
+        backdrop-filter: none;
+        transition: all 0.4s ease;
+    }
+
+    .sec2 ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: rgba(10, 9, 9, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(113, 204, 240, 0.2);
+    }
+
+    .sec2.active ul {
+        display: flex;
+    }
+
+    .sec2 li {
+        width: 100%;
+    }
+
+    .sec2 li a {
+        margin: 0;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(113, 204, 240, 0.2);
+    }
+
+    
+    .sec2.active + section {
+        margin-top: 200px;
+    }
+}
